@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Asteroids Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="gameCanvas"></canvas>
+
+<!-- Pause Overlay -->
+<div id="pauseOverlay" class="overlay hidden">
+    <div class="overlay-content">
+        <h1>Game Paused</h1>
+        <p>Press ESC to resume</p>
+    </div>
+</div>
+
+<!-- Start Screen -->
+<div id="startScreen" class="overlay">
+    <div class="overlay-content">
+        <h1>Asteroids Game</h1>
+        <p>Press ENTER to Start</p>
+        <p>Controls:</p>
+        <ul>
+            <li>Left/Right Arrows: Rotate Ship</li>
+            <li>Up Arrow: Accelerate</li>
+            <li>Spacebar: Shoot</li>
+            <li>Q: Activate Laser Power-Up</li>
+            <li>W: Activate Immunity Power-Up</li>
+            <li>E: Place Bomb</li>
+            <li>R: Activate Wipe Power-Up</li>
+            <li>ESC: Pause/Unpause</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Game Over Screen -->
+<div id="gameOverScreen" class="overlay hidden">
+    <div class="overlay-content">
+        <h1>Game Over</h1>
+        <p id="finalScore"></p>
+        <p>Press ENTER to Restart</p>
+    </div>
+</div>
+
+<!-- Power-Up Indicators -->
+<div id="powerUpContainer">
+    <div class="power-up" id="laserIndicator">Laser</div>
+    <div class="power-up" id="immuneIndicator">Immune</div>
+    <div class="power-up" id="bombIndicator">Bomb</div>
+    <div class="power-up" id="wipeIndicator">Wipe</div>
+</div>
+
+<!-- Include the game script -->
+<script src="script.js"></script>
+
+</body>
+</html>
